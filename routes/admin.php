@@ -11,7 +11,4 @@ Route::prefix('admin')->group(function(){
     Route::get('/list_series',[AdminController::class,'list_series'])->name('list_series');
 
 
- 
-
-
 });
