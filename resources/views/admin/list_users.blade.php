@@ -6,13 +6,12 @@
     
 
 
-<table class="table table-danger table-striped" style="width: 100%">
+<table class="table table-striped" style="width: 100%">
     <thead>
     <tr>
         <th scope="col">{{ ("Nombre") }}</th>
         <th scope="col">{{ ("Email") }}</th>
         <th scope="col">{{ ("Rol") }}</th>
-        <th scope="col">{{ ("Permisos") }}</th>
     </tr>
     </thead>
     <tbody>
@@ -28,7 +27,7 @@
                         {{ $role->name.' ' }}
                     @endforeach
                 </td>
-                <td>{{ date_format($user->created_at, "d/m/Y") }}</td>
+        
 
             </tr>
         @empty

@@ -43,7 +43,7 @@
                     @auth                    
                     @endauth
                     @if(Auth::check() and Auth::user()->hasRoles('admin')){
-                        <a  href="{{ url('/admin/') }}"  class="text-lg font-semibold text-gray-100 no-underline ml-10 mr-10">
+                        <a  href="{{ url('/admin/list_users') }}"  class="text-lg font-semibold text-gray-100 no-underline ml-10 mr-10">
                         {{ __('Admin') }}
                     </a>
                     }

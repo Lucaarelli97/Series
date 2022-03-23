@@ -6,7 +6,7 @@
 
 
 
-<table class="table table-danger table-striped" style="width: 100%">
+<table class="table table-striped" style="width: 100%">
     <thead>
         <tr>
             <a href="{{route('admin.create')}}" class="btn btn-primary btn-lg mb-4"> + Nueva Serie</a>
