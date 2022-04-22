@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\seriesnet;
+use App\Models\films;
+use App\Models\docus;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -27,12 +29,23 @@ class HomeController extends Controller
         return view('home');
     }
 
-    public function freeseries()
-    {
+    //SERIES
+    public function freeseries(){
         $series=seriesnet::all();
         return view('seriesfree', compact('series'));
     }
 
+    //PELICULAS
+    public function peliculas(){
+        $film=films::all();
+        return view('peliculas', compact('film'));
+    }
+
+     //DOCUMENTALES
+     public function docus(){
+        $docus=docus::all();
+        return view('docus', compact('docus'));
+    }
  
    
 }

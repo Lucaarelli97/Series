@@ -27,9 +27,16 @@
 
                    
                     <a  href="{{ url('freeseries')}}"  class="text-lg font-semibold text-gray-100 no-underline ml-10 mr-10">
-                        {{ __('Catalogo') }}
+                        {{ __('Series') }}
+                    </a>
+
+                    <a  href="{{ url('peliculas')}}"  class="text-lg font-semibold text-gray-100 no-underline ml-10 mr-10">
+                        {{ __('Peliculas') }}
                     </a>
                     
+                    <a  href="{{ url('docus')}}"  class="text-lg font-semibold text-gray-100 no-underline ml-10 mr-10">
+                        {{ __('Documentales') }}
+                    </a>
                     
 
                     <a href="https://www.imdb.com/" target="_blank" class="text-lg font-semibold text-gray-100 no-underline ml-10 mr-10">

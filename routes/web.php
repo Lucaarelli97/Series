@@ -25,12 +25,16 @@ Auth::routes();
 Route::group(['middleware' => ['can:admin']], function () {
     Route::get('admin/list_users', [\App\Http\Controllers\Admin\AdminController::class, 'list_users']);
     Route::get('admin/list_series', [\App\Http\Controllers\Admin\AdminController::class, 'list_series']);
+    Route::get('admin/list_films', [\App\Http\Controllers\Admin\AdminController::class, 'list_films']);
+    Route::get('admin/list_docus', [\App\Http\Controllers\Admin\AdminController::class, 'list_docus']);
     Route::resource('admin', \App\Http\Controllers\Admin\SeriesController::class);
 
 });
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('freeseries', [\App\Http\Controllers\HomeController::class, 'freeseries']);
+Route::get('peliculas', [\App\Http\Controllers\HomeController::class, 'peliculas']);
+Route::get('docus', [\App\Http\Controllers\HomeController::class, 'docus']);
 Route::get('contacta', [ContactaController::class, 'index'])->name('contacta.index');
 Route::post('contacta', [ContactaController::class, 'store'])->name('contacta.store');
 

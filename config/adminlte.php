@@ -248,6 +248,16 @@ return [
             'url'  => 'admin/list_series',
             'icon' => 'fas fa-fw fa-film',
         ],
+        [
+            'text' => 'Listar Peliculas',
+            'url'  => 'admin/list_films',
+            'icon' => 'fas fa-fw fa-film',
+        ],
+        [
+            'text' => 'Listar Documentales',
+            'url'  => 'admin/list_docus',
+            'icon' => 'fas fa-fw fa-film',
+        ],
         
     ],
 
