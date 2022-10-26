@@ -9,17 +9,29 @@
             {{ session('status') }}
         </div>
         @endif
-
-            <div class="d-flex justify-content-center row">
+            
+                       
+        <div class="d-flex justify-content-center row" >
             @forelse($docus as $docus)
-            <div class="col-xs-6 col-sm-4 col-md-3 text-center d-flex flex-column align-items-center mb-5">
-                    <div class="d-flex justify-content-center">
-                        <h2 class="text-white d-flex justify-content-center mb-2">{{ $docus->Nombre }}</h2>
+                <div class="col-xs-6 col-sm-4 col-md-2 text-center d-flex flex-column align-items-center mb-5 m-2">
+                    <div class="alert alert-dark mt-2">
+                            <strong>{{ $docus->Nombre }}</strong>
                     </div>
-                        <img class="img-fluid" src="{{ $docus->Imagen}}">
-                    </a>
+                    <img class="card-img-top" src="{{ $docus->Imagen}}">                              
+                        <form action = "index.php" method = "post">
+                        <div class = " star_content  mt-4" >
+                        <input name = "rate" value = "1" type = "radio" class = "star" checked = "checked"/>
+                        <input name = "rate" value = "2" type = "radio" class = "star"/>
+                        <input name = "rate" value = "3" type = "radio" class = "star"/>
+                        <input name = "rate" value = "4" type = "radio" class = "star"/>
+                        <input name = "rate" value = "5" type = "radio" class = "star"/>
+                            </div>
+
+                        </form >
+                    </div>        
+                @empty
+                    </div>
                 </div>
-            @empty
                 <tr>
                     <td colspan="4">
                         <div class="bg-red-100 text-center border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
@@ -29,8 +41,7 @@
                     </td>
                 </tr>
             @endforelse
-            </div>
-         
+        </div> 
     </div>
 </main>
 @endsection

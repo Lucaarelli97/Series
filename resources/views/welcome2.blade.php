@@ -32,7 +32,7 @@
             <div class="flex flex-col justify-around h-full">
                 <div>
                 
-                    <img src="{{ asset('css/images/ne1.png') }}">
+                    <img src="{{ asset('css/images/ait2.png') }}">
                 </div>
             </div>
         </div>

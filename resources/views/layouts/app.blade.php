@@ -22,7 +22,7 @@
             <div class="container mx-auto flex justify-between items-center px-6">
                 <div>
                     <a href="{{ url('/home') }}" class="text-lg font-semibold text-red-800 no-underline">
-                       NETFLIX
+                       AITFLIX
                     </a>
 
                    
@@ -83,11 +83,11 @@
         <div class="container text-center text-md-left">
             <div class="row text-center text-md-left">
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-danger">NETFLIX</h5>
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-danger">AITFLIX</h5>
                     <p>Es una empresa de entretenimiento y una plataforma de streaming estadounidense. Ubicada en Los Gatos (California), la compañía fue creada en 1997 y un año después comenzó su actividad, ofreciendo un servicio de alquiler de DVD a través del correo postal.</p>
                 </div>
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-danger justify-content: center"><img src="css/images/ne1.png"  width="300"></h5>
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-danger justify-content: center"><img src="css/images/ait2.png"  width="800"></h5>
                 </div>
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Redes Sociales</h5>
@@ -110,7 +110,7 @@
                         <i class="fas fa-home mr-3">Oviedo, Asturias</i>
                     </p>
                     <p>
-                        <i class="fas fa-home mr-3">netflix@netflix.com</i>
+                        <i class="fas fa-home mr-3">aitflix@netflix.com</i>
                     </p>
                     <p>
                         <i class="fas fa-home mr-3">+111 222 333</i>

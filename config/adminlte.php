@@ -45,8 +45,8 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>Netflix',
-    'logo_img' => 'vendor/adminlte/dist/img/netflix.png',
+    'logo' => '<b>Admin</b>Aitflix',
+    'logo_img' => 'vendor/adminlte/dist/img/aiti.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
