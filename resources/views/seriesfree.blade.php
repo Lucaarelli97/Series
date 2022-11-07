@@ -25,7 +25,7 @@
                         <img class="img-fluid" src="{{ $seriesnet->Imagen}}">
                     </a>
                 </div>
-            @empty
+            @empty   
                 <tr>
                     <td colspan="4">
                         <div class="bg-red-100 text-center border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
@@ -47,6 +47,7 @@
                         <form action = "index.php" method = "post">
                         <div class = " star_content  mt-4" >
                         <input name = "rate" value = "1" type = "radio" class = "star" checked = "checked"/>
+                        
                         <input name = "rate" value = "2" type = "radio" class = "star"/>
                         <input name = "rate" value = "3" type = "radio" class = "star"/>
                         <input name = "rate" value = "4" type = "radio" class = "star"/>
