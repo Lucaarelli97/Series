@@ -9,6 +9,12 @@
             {{ session('status') }}
         </div>
         @endif
+
+        <select name="tipo">
+            <option>Todos</option>
+            <option>Free</option>
+            <option>Pago</option>
+        </select>
         <!--
             <div class="d-flex justify-content-center row">
             @forelse($series as $seriesnet)

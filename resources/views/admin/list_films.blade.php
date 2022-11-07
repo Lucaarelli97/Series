@@ -9,7 +9,7 @@
 <table class="table table-striped" style="width: 100%">
     <thead>
         <tr>
-            <a href="" class="btn btn-primary btn-lg mb-4" > + Nueva Pelicula</a>
+            <a href="{{route('admin.create')}}" class="btn btn-primary btn-lg mb-4" > + Nueva Pelicula</a>
             <th scope="col">{{ ("Nombre") }}</th>
             <th scope="col">{{ ("Año") }}</th>
             <th scope="col">{{ ("Director") }}</th>
@@ -28,16 +28,17 @@
             <td>{{ $films->Sinopsis }}</td>
             <td>{{ $films->Imagen }}</td>
             <td>{{ $films->Tipo }}</td>
-            <td><a href="" class="btn btn-primary btn-sm">
+            <td><a href="{{route('admin.edit', $films->id)}}" class="btn btn-primary btn-sm">
             <i class="fa fa-edit"></i></a></td>
             <td>
-                <form id="" action="" method="POST" class="hidden">
+                <form id="delete-film-{{$films->id }}-form" action="{{route('admin.destroy', $films->id)}}" method="POST" class="hidden">
                     @method('DELETE')
                     @csrf
                 </form>
 
                 <button class="btn btn-danger btn-sm" onclick="event.preventDefault() ; 
-                "><i class="fa fa-trash"></i>
+                document.getElementById('delete-film-{{$films->id }}-form').submit();">
+                <i class="fa fa-trash"></i>
                 </button>
             </td>
         </tr>
