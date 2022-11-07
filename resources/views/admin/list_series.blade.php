@@ -29,15 +29,18 @@
             <td>{{ $seriesnet->Sinopsis }}</td>
             <td>{{ $seriesnet->Imagen }}</td>
             <td>{{ $seriesnet->Tipo }}</td>
-            <td><a href="{{route('admin.edit', $seriesnet->id)}}" class="btn btn-primary btn-sm">Editar</a></td>
+            <td><a href="{{route('admin.edit', $seriesnet->id)}}" class="btn btn-primary btn-sm">
+            <i class="fa fa-edit"></i></a></td>
             <td>
                 <form id="delete-serie-{{$seriesnet->id }}-form" action="{{route('admin.destroy', $seriesnet->id)}}" method="POST" class="hidden">
                     @method('DELETE')
                     @csrf
                 </form>
 
-                <button class="btn btn-danger btn-sm" onclick="event.preventDefault() ; 
-                 document.getElementById('delete-serie-{{$seriesnet->id }}-form').submit();">Eliminar</button>
+                <button class="btn btn-danger btn-sm "  onclick="event.preventDefault() ; 
+                 document.getElementById('delete-serie-{{$seriesnet->id }}-form').submit();">
+                 <i class="fa fa-trash"></i>
+                </button>
             </td>
 
 

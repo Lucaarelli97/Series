@@ -29,7 +29,18 @@
             <td>{{ $docus->Sinopsis }}</td>
             <td>{{ $docus->Imagen }}</td>
             <td>{{ $docus->Tipo }}</td>
-      
+            <td><a href="" class="btn btn-primary btn-sm">
+            <i class="fa fa-edit"></i></a></td>
+            <td>
+                <form id="" action="" method="POST" class="hidden">
+                    @method('DELETE')
+                    @csrf
+                </form>
+
+                <button class="btn btn-danger btn-sm" onclick="event.preventDefault() ; 
+                ">
+                <i class="fa fa-trash"></i></button>
+            </td>
         </tr>
         @empty
         <tr>
