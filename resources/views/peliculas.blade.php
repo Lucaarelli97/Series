@@ -9,6 +9,13 @@
             {{ session('status') }}
         </div>
         @endif
+
+        <!--BUSCADOR-->
+        <form class="row  input-group sombra mx-5 col-3 text-center" id="buscador"> 
+            <input name="buscar" class="form-control col-3" type="search" placeholder="Buscar por tipo" aria-label="Search">
+            <button  type="submit">Enviar</button>
+        
+        </form>
     <!--
             <div class="d-flex justify-content-center row">
             @forelse($film as $films)

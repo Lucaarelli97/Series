@@ -10,11 +10,11 @@
         </div>
         @endif
 
-        <select name="tipo">
-            <option>Todos</option>
-            <option>Free</option>
-            <option>Pago</option>
-        </select>
+        <!--BUSCADOR DE PELICULAS -->
+       <form class="row  input-group sombra mx-5 col-3 text-center" id="buscador"> 
+            <input name="buscar" class="form-control col-3" type="search" placeholder="Buscar por tipo" aria-label="Search">
+            <button class="btn btn-warning boton col-2 input-group-btn " type="submit"></button>
+            </form> 
         <!--
             <div class="d-flex justify-content-center row">
             @forelse($series as $seriesnet)

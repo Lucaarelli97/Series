@@ -30,14 +30,24 @@ class HomeController extends Controller
     }
 
     //SERIES
-    public function freeseries(){
-        $series=seriesnet::all();
+    public function freeseries(Request $request){
+       $series=seriesnet::all();
+        $Tipo = $request->get('buscar');
+        //$series = seriesnet::where('Nombre','like',"%Perdidos%");
+        //dd($series);
+
         return view('seriesfree', compact('series'));
     }
 
+  
     //PELICULAS
-    public function peliculas(){
+    public function peliculas(Request $request){
         $film=films::all();
+        $Nombre = $request->get('buscar');
+        //$films = films::where('Nombre','like',"%$Nombre%");
+        //dd($film);
+
+        
         return view('peliculas', compact('film'));
     }
 

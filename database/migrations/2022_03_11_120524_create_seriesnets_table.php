@@ -22,6 +22,8 @@ class CreateSeriesnetsTable extends Migration
             $table->string('Imagen');
             $table->string('Tipo');
             $table->timestamps();
+
+            $table->foreign('id')->references('id_serie')->on('pivote');
         });
 
         DB::table("seriesnets")

@@ -33,7 +33,7 @@ class PeliculasController extends Controller
         $title = __("Crear Pelicula");
         $textButton = __("Crear");
         $route = route("admin.store");
-        return view('admin.create', compact("title", "textButton", "route", "films"));
+        return view('admin.createfilm', compact("title", "textButton", "route", "films"));
     }
 
     /**
